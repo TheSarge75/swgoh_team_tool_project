@@ -5,6 +5,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import javax.print.Doc;
 import java.io.IOException;
 import java.text.Normalizer;
 import java.util.ArrayList;
@@ -41,6 +42,18 @@ public class Hero {
         }
 
         return heroesList;
+    }
+
+    public static List<Hero> getMySquadArenaTeam(){
+        List<Hero> squadArenaTeamList = new ArrayList<>();
+
+        try {
+            Document squadArenaTeamListDocument = Jsoup.connect("https://swgoh.gg/p/417316997/").get();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+        return squadArenaTeamList;
     }
 
     public static String processDisplayName(String raw){

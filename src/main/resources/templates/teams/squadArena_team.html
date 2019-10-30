@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <link rel="stylesheet" href="./css/site.css">
+    <meta charset="UTF-8">
+    <title>SWGoH team tool</title>
+</head>
+<body>
+<input type="button" value="Home" onclick="location.href='/'">
+<div>These are all of my heroes.</div>
+<table id="allMyHeroesTable">
+    <tr>
+        <th>Display Name</th>
+    </tr>
+    <tr th:each="hero : ${heroes}">
+        <td>
+            <a th:href="@{https://swgoh.gg/p/417316997/characters/}+${hero.nameForURL}">
+                <span th:text="${hero.displayName}"></span>
+            </a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
