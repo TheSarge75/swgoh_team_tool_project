@@ -2,13 +2,14 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/test.css">
     <meta charset="UTF-8">
     <title>SWGoH team tool</title>
 </head>
 <body>
     <div>
         <p>Welcome to the main page.</p>
-        <p th:text="some test text"></p>
+        <div th:include="./tools/test.html"></div>
     </div>
     <input type="button" value="Show me my User Profile" onclick="location.href='/userProfile'">
     <input type="button" value="Show me all of my Heroes" onclick="location.href='/myHeroes'">
