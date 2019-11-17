@@ -1,12 +1,11 @@
 package com.jones.main_package.controllers;
 
+import com.jones.main_package.controllers.tools.GearPieceResolver_Tool;
 import com.jones.main_package.models.Hero;
 import com.jones.main_package.models.UserProfile;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.ArrayList;
 
 @Controller
 public class MainPageNavigationController {
@@ -33,5 +32,11 @@ public class MainPageNavigationController {
     public String getMySquadArenaTeam(Model model){
         model.addAttribute("squadArena_team", Hero.getMySquadArenaTeam());
         return "teams/myHeroes";
+    }
+
+    @RequestMapping("/gearPieceResolver")
+    public String launchTheGearPieceResolver(Model model){
+        model.addAttribute("gearPieceResolver_tool", new GearPieceResolver_Tool());
+        return "tools/gearPieceResolver";
     }
 }

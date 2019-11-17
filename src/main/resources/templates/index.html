@@ -6,9 +6,15 @@
     <title>SWGoH team tool</title>
 </head>
 <body>
-    <div>Welcome to the main page.</div>
+    <div>
+        <p>Welcome to the main page.</p>
+        <p th:text="some test text"></p>
+    </div>
     <input type="button" value="Show me my User Profile" onclick="location.href='/userProfile'">
     <input type="button" value="Show me all of my Heroes" onclick="location.href='/myHeroes'">
     <input type="button" value="Show me my current Squad Arena Team" onclick="location.href='/squadArena_team'">
+    <input type="button" value="Take me to the Gear Piece Resolver page" onclick="location.href='/gearPieceResolver'">
+    <div>These are the questions to solve:</div>
+    <div>Where are the most cost efficient places to find this gear: -insert gear piece-</div>
 </body>
 </html>
