@@ -2,6 +2,7 @@ package com.jones.main_package.controllers;
 
 import com.jones.main_package.controllers.tools.GearPieceResolver_Tool;
 import com.jones.main_package.models.Hero;
+import com.jones.main_package.models.Manufacturer;
 import com.jones.main_package.models.UserProfile;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -38,5 +39,11 @@ public class MainPageNavigationController {
     public String launchTheGearPieceResolver(Model model){
         model.addAttribute("gearPieceResolver_tool", new GearPieceResolver_Tool());
         return "tools/gearPieceResolver";
+    }
+
+    @RequestMapping("/manufacturers")
+    public String showAllManufacturers(Model model){
+        model.addAttribute("manufacturersList", Manufacturer.getAllManufacturers());
+        return "manufacturers/manufacturers";
     }
 }
