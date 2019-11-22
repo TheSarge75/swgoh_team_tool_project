@@ -36,8 +36,9 @@ public class Manufacturer {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://swgohtool.cxnhli5rhy3i.us-east-2.rds.amazonaws.com/innodb",
-                    "thesarge",
-                    "1yFexgIPfWwl7nvXJTpb"
+                    // The username and password need to be obtained dynamically, and not be hard-coded;
+                    "some user name",
+                    "some key"
             );
             Statement statement = con.createStatement();
             ResultSet rs = statement.executeQuery(GET_ALL_SQL);
