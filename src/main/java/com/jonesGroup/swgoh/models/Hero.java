@@ -1,4 +1,4 @@
-package com.jones.main_package.models;
+package com.jonesGroup.swgoh.models;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

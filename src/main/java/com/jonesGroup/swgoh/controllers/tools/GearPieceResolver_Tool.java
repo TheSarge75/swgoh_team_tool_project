@@ -1,6 +1,6 @@
-package com.jones.main_package.controllers.tools;
+package com.jonesGroup.swgoh.controllers.tools;
 
-import com.jones.main_package.models.GearPiece;
+import com.jonesGroup.swgoh.models.GearPiece;
 
 import java.util.ArrayList;
 

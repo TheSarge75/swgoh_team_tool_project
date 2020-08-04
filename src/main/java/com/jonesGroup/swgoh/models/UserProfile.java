@@ -1,4 +1,4 @@
-package com.jones.main_package.models;
+package com.jonesGroup.swgoh.models;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -6,9 +6,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class UserProfile {
 

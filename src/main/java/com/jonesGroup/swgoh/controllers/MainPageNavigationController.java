@@ -1,9 +1,9 @@
-package com.jones.main_package.controllers;
+package com.jonesGroup.swgoh.controllers;
 
-import com.jones.main_package.controllers.tools.GearPieceResolver_Tool;
-import com.jones.main_package.models.Hero;
-import com.jones.main_package.models.Manufacturer;
-import com.jones.main_package.models.UserProfile;
+import com.jonesGroup.swgoh.controllers.tools.GearPieceResolver_Tool;
+import com.jonesGroup.swgoh.models.Hero;
+import com.jonesGroup.swgoh.models.Manufacturer;
+import com.jonesGroup.swgoh.models.UserProfile;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

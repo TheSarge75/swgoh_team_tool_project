@@ -1,4 +1,4 @@
-package com.jones.main_package.models;
+package com.jonesGroup.swgoh.models;
 
 import java.util.ArrayList;
 

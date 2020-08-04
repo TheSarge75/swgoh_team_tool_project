@@ -1,4 +1,4 @@
-package com.jones.main_package.controllers;
+package com.jonesGroup.swgoh.controllers;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
