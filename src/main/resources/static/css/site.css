@@ -1,0 +1,11 @@
+body {
+    background-color: red;
+}
+
+.yellow-border {
+    border: 1px solid yellow;
+}
+
+.blue-border {
+    border: 1px solid blue;
+}
