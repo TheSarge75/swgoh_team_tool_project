@@ -33,20 +33,20 @@ public class SwgohGearStatsTests {
         Assertions.assertFalse(stats.isAddsTactics());
         Assertions.assertFalse(stats.isAddsTenacity());
 
-        Assertions.assertTrue(stats.getAgilityPointsAdded() == 0);
-        Assertions.assertTrue(stats.getHealthStealPercentageAdded() == 0.0);
-        Assertions.assertTrue(stats.getArmorPenetrationPointsAdded() == 0);
-        Assertions.assertTrue(stats.getArmorPointsAdded() == 0);
-        Assertions.assertTrue(stats.getHealthPointsAdded() == 0);
-        Assertions.assertTrue(stats.getPhysicalCriticalChancePointsAdded() == 0);
-        Assertions.assertTrue(stats.getPhysicalDamagePointsAdded() == 0);
-        Assertions.assertTrue(stats.getPotencyPercentageAdded() == 0.0);
-        Assertions.assertTrue(stats.getResistancePenetrationPointsAdded() == 0);
-        Assertions.assertTrue(stats.getSpecialCriticalChancePointsAdded() == 0);
-        Assertions.assertTrue(stats.getSpecialDamagePointsAdded() == 0);
-        Assertions.assertTrue(stats.getSpeedPointsAdded() == 0);
-        Assertions.assertTrue(stats.getStrengthPointsAdded() == 0);
-        Assertions.assertTrue(stats.getTacticsPointsAdded() == 0);
-        Assertions.assertTrue(stats.getTenacityPercentageAdded() == 0.0);
+        Assertions.assertEquals((int) stats.getAgilityPointsAdded(), 0);
+        Assertions.assertEquals(stats.getHealthStealPercentageAdded(), 0.0);
+        Assertions.assertEquals((int) stats.getArmorPenetrationPointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getArmorPointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getHealthPointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getPhysicalCriticalChancePointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getPhysicalDamagePointsAdded(), 0);
+        Assertions.assertEquals(stats.getPotencyPercentageAdded(), 0.0);
+        Assertions.assertEquals((int) stats.getResistancePenetrationPointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getSpecialCriticalChancePointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getSpecialDamagePointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getSpeedPointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getStrengthPointsAdded(), 0);
+        Assertions.assertEquals((int) stats.getTacticsPointsAdded(), 0);
+        Assertions.assertEquals(stats.getTenacityPercentageAdded(), 0.0);
     }
 }
