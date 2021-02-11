@@ -16,6 +16,4 @@ package com.jonesGroup.swgoh.models;
 
 public class Choice {
 
-
-
 }

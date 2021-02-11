@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SWGoH Team Tool - Light</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="flex-container light">
+
+    <p th:text="'Welcome, ' + ${userprofile_object.userName} + '.  You have chosen wisely to follow the Light.  Please login.'"></p>
+
+    <div id="login_div">
+        <form id="login_form" action="/userhomepage" method="post">
+            <label for="username_input">Username:</label>
+            <input id="username_input" placeholder="Enter username..." name="username_input">
+            <label for="password_input">Password:</label>
+            <input id="password_input" placeholder="Password..." name="password_input">
+            <button type="submit">this is the submit button</button>
+        </form>
+    </div>
+    <div class="light">
+        <a href="/">Return to balance...</a>
+    </div>
+</div>
+</body>
+</html>

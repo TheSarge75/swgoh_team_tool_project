@@ -2,7 +2,6 @@ package com.jonesGroup.swgoh.models;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -10,28 +9,30 @@ import java.io.IOException;
 public class UserProfile {
 
     private String userName;
+    private String password;
+
     private int userId;
     private int level;
     private String allyCode;
-
     private String guildName;
-    private String joinedGuild_date;
 
+    private String joinedGuild_date;
     private int galacticPower_total;
+
     private int galacticPower_heroes;
     private int galacticPower_ships;
-
     private int fleetArena_wins;
-    private int squadArena_wins;
 
+    private int squadArena_wins;
     private int battle_wins_normal;
+
     private int battle_wins_hard;
     private int battle_wins_galacticWar;
-
     private int guild_raid_wins;
-    private int guild_tokens_earned;
 
+    private int guild_tokens_earned;
     private int championship_battle_successful_defends;
+
     private int championship_battle_full_rounds_cleared;
     private int championship_lifetime_score;
     private int championship_battle_undersized_squad_wins;
@@ -40,8 +41,8 @@ public class UserProfile {
     private long championship_best_rank;
     private int championship_battle_successful_attacks;
     private int championship_territories_cleared;
-
     private int numberOf_heroes_unlocked;
+
     private int numberOf_zetas;
     private int numberOf_heroes_7star;
     private int numberOf_heroes_gear13;
@@ -50,23 +51,21 @@ public class UserProfile {
     private int numberOf_heroes_gear10;
     private int numberOf_ships_unlocked;
     private int numberOf_ships_7star;
-
     private int squadArena_currentRank;
+
     private int squadArena_highestRank;
     private int squadArena_lowestRank;
     private int squadArena_averageRank;
-
     private int fleetArena_currentRank;
+
     private int fleetArena_highestRank;
     private int fleetArena_lowestRank;
     private int fleetArena_averageRank;
 
-    public UserProfile(){
+    public UserProfile(){}
 
-    }
-
-    public UserProfile(String userName){
-        this.userName = userName;
+    public UserProfile(String userName, String password){
+        this.userName = userName;this.password = password;
     }
 
     public static UserProfile getProfile(){
@@ -84,9 +83,6 @@ public class UserProfile {
         UserProfile profile = new UserProfile();
 
         Elements profileElementsFrom_panel_profile_class = doc.select("div.panel-profile > div.panel-body");
-        System.out.println("start");
-        System.out.println(profileElementsFrom_panel_profile_class);
-        System.out.println("end");
 
         profile.setUserName(profileElementsFrom_panel_profile_class.select("h5.panel-title").get(0).text());
         profile.setUserId(Integer.parseInt(profileElementsFrom_panel_profile_class.select("h5.m-y-0").get(0).text()));
@@ -170,6 +166,10 @@ public class UserProfile {
     public void setUserId(int userId) {
         this.userId = userId;
     }
+
+    public String getPassword() { return password; }
+
+    public void setPassword(String password) { this.password = password; }
 
     public int getLevel() {
         return level;

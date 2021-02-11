@@ -1,0 +1,33 @@
+objc[17532]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/bin/java (0x103c4b4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x103cc14e0). One of the two will be used. Which one is undefined.
+---- IntelliJ IDEA coverage runner ---- 
+sampling ...
+include patterns:
+com\.jonesGroup\.swgoh\..*
+exclude patterns:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/josh_1/IdeaProjects/swgohartifact/lib/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/josh_1/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2020-08-24 12:41:26.470  INFO 17532 --- [           main] c.j.swgoh.SwGoHProjectApplication        : Starting SwGoHProjectApplication on themac.lan with PID 17532 (/Users/josh_1/IdeaProjects/swgohartifact/target/classes started by josh_1 in /Users/josh_1/IdeaProjects/swgohartifact)
+2020-08-24 12:41:26.473  INFO 17532 --- [           main] c.j.swgoh.SwGoHProjectApplication        : No active profile set, falling back to default profiles: default
+2020-08-24 12:41:30.246  INFO 17532 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-24 12:41:30.424  INFO 17532 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-24 12:41:30.425  INFO 17532 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-24 12:41:30.740  INFO 17532 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-24 12:41:30.740  INFO 17532 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4072 ms
+2020-08-24 12:41:31.146  INFO 17532 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 12:41:31.541  INFO 17532 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-08-24 12:41:31.820  INFO 17532 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-24 12:41:31.942  INFO 17532 --- [           main] c.j.swgoh.SwGoHProjectApplication        : Started SwGoHProjectApplication in 7.569 seconds (JVM running for 12.125)
+Class transformation time: 0.037422909s for 4803 classes or 7.791569643972516E-6s per class
+2020-08-24 12:59:17.671  INFO 17532 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
